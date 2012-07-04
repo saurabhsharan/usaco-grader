@@ -36,7 +36,7 @@ def main():
          check_problem(problem_name)
    else:
       for f in os.listdir(os.getcwd()):
-         if os.path.splitext(f)[1] == '.py' and os.path.splitext(f)[0] != 'usaco':
+         if os.path.splitext(f)[1] == '.py' and os.path.splitext(f)[0] != 'usaco-grader':
             check_problem(os.path.splitext(f)[0])
    
 if __name__ == '__main__':
